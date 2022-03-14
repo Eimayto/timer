@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body{
+        margin:0;
+        background-color:black;
+      }
+      iframe{
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <span id='timer'></span>
+    <script type="text/javascript">
+      var link = document.location.href.split("?");
+      document.getElementById('timer').innerHTML = '<iframe width="100%" height="100%" src="https://vclock.kr/embed/timer/#countdown=00:'+link+'&enabled=0&seconds=0&theme=1&ampm=1&sound=xylophone" frameborder="0" allowfullscreen></iframe>';
+    </script>
+
+  </body>
+</html>
